@@ -1,0 +1,2 @@
+rootProject.name='STK AJ'
+include ':app'
