@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package in.kkamalyesh.apps.stk.androidvirtualkeyboard;
+package in.kkamalyesh.apps.stk.virtualkeyboard;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import in.co.kkamalyesh.apps.stk.inputmethodcommon.InputMethodSettingsFragment;
+import in.kkamalyesh.apps.stk.inputmethodcommon.InputMethodSettingsFragment;
 
 /**
  * Displays the IME preferences inside the input method setting.

@@ -20,7 +20,7 @@
  * Project.
  */
 
-package in.kkamalyesh.apps.stk.aj.inputmethodcommon;
+package in.kkamalyesh.apps.stk.inputmethodcommon;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
