@@ -3,4 +3,40 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="candidate_normal_1">#FF000000</color>
+    <color name="candidate_recommended_1">#FFddaa00</color>
+    <color name="candidate_other_1">#ff808080</color>
+    <color name="candidate_background_1">#ffbbbbbb</color>
+
+    <color name="invert_candidate_normal_1">#ffbbbbbb</color>
+    <color name="invert_candidate_recommended_1">#FFddaa00</color>
+    <color name="invert_candidate_other_1">#ff888888</color>
+    <color name="invert_candidate_background_1">#44444444</color>
+
+    <color name="color_board_background_1">#ff000000</color>
+    <color name="invert_color_board_background_1">#ffd0d0d0</color>
+
+    <color name="color_key_background_1">#ffd0d0d0</color>
+    <color name="color_key_foreground_1">#ff000000</color>
+
+    <color name="invert_color_key_background_1">#ff000000</color>
+    <color name="invert_color_key_foreground_1">#ffd0d0d0</color>
+
+    <color name="shapeLightText">#ff555555</color>
+    <color name="shapeLightBack">#ffffff</color>
+    <color name="shapeShadowLight">#ff999999</color>
+
+
+
+
+    <color name="board_background_1">#a0f0f0f0</color>
+    <color name="dark_board_background_1">#a00f0f0f</color>
+    <color name="key_background_1">#f0f0f0f0</color>
+    <color name="dark_key_background_1">#f00f0f0f</color>
+    <color name="key_foreground_1">#ff000000</color>
+    <color name="dark_key_foreground_1">#ffffffff</color>
+    <color name="key_border_shadow_1">#888f8f8f</color>
+    <color name="dark_key_border_shadow_1">#888f8f8f</color>
 </resources>

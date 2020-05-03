@@ -3,4 +3,33 @@
     <string name="app_version">क ५</string>
     <string name="app_version_name">क</string>
     <string name="app_version_number">५</string>
+
+
+    <!-- Title for Latin keyboard  -->
+    <string name="ime_name">कळफलक</string>
+
+    <!-- Symbols that are commonly considered word separators in this language -->
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+
+    <!-- Labels on soft keys -->
+    <string name="label_go_key"> GO </string>
+    <string name="label_next_key">NEXT</string>
+    <string name="label_send_key">SEND</string>
+    <string name="label_ret_key">RET</string>
+    <string name="label_find_key">RET</string>
+
+    <!-- Labels for subtype -->
+    <string name="label_subtype_generic">%s</string>
+    <string name="label_subtype_mr">मराठी</string>
+
+    <!-- Titles for ImePreference -->
+    <string name="settings_name">कळफलक Settings</string>
+    <string name="language_selection_title">Input languages</string>
+    <string name="select_language">Select input languages</string>
+    <string name="general_category">General</string>
+
+
+    <string name="start_message">कळफलक is not yet selected for use. Please go to settings and select कळफलक</string>
+    <string name="select_kalafalaka_btn" >Go To Settings</string>
+
 </resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="candidate_font_height">20sp</dimen>
+    <dimen name="candidate_vertical_padding">6sp</dimen>
+
+    <dimen name="key_text_size">20sp</dimen>
+
+    <dimen name="key_height">7%p</dimen>
+    <dimen name="key_width_alpha_sym">9%p</dimen>
+    <dimen name="key_width_button">14%p</dimen>
+    <dimen name="key_width_space_row">14%p</dimen>
+    <dimen name="key_width_space">27%p</dimen>
+    <dimen name="key_width_sym_space">40%p</dimen>
+
+
+    <dimen name="hGap">0.9%p</dimen>
+    <dimen name="vGap">1%p</dimen>
+    <dimen name="hGapR1QWERTY">10dp</dimen>
+    <dimen name="hGapR2QWERTY">4%p</dimen>
+    <dimen name="hGapR3QWERTY">3.5%p</dimen>
+    <dimen name="hGapR4QWERTY">3.5%p</dimen>
+
+    <dimen name="start_message_width">200dp</dimen>
+    <dimen name="key_border_radius_1">5dp</dimen>
+    <dimen name="key_border_weight_1">1dp</dimen>
+    <dimen name="board_margin_bottom">10dp</dimen>
+    <dimen name="board_padding_bottom">10dp</dimen>
+</resources>

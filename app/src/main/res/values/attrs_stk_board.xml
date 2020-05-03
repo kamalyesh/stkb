@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <declare-styleable name="StkBoard">
+        <attr name="keyWidth" format="dimension" />
+        <attr name="keyHeight" format="dimension" />
+        <attr name="horizontalGap" format="dimension" />
+        <attr name="verticalGap" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="StkBoard_StkRow">
+        <attr name="rowEdgeFlags" format="integer" />
+        <attr name="keyboardMode" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="StkBoard_StkKey">
+        <attr name="codes" format="enum" />
+        <attr name="iconPreview" format="reference" />
+        <attr name="popupCharacters" format="string" />
+        <attr name="popupKeyboard" format="reference" />
+        <attr name="isRepeatable" format="boolean" />
+        <attr name="isModifier" format="boolean" />
+        <attr name="isSticky" format="boolean" />
+        <attr name="isHideable" format="boolean" />
+        <attr name="keyEdgeFlags" format="integer" />
+        <attr name="keyIcon" format="reference" />
+        <attr name="keyLabel" format="string" />
+        <attr name="keyOutputText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="StkbView">
+        <attr name="keyBackground" format="reference" />
+        <attr name="verticalCorrection" format="integer" />
+        <attr name="keyPreviewLayout" format="reference" />
+        <attr name="keyPreviewOffset" format="dimension" />
+        <attr name="keyPreviewHeight" format="dimension" />
+        <attr name="keyTextSize" format="dimension" />
+        <attr name="keyTextColor" format="color" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="popupLayout" format="dimension" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="backgroundDimAmount" format="float" />
+    </declare-styleable>
+    -->
+</resources>
