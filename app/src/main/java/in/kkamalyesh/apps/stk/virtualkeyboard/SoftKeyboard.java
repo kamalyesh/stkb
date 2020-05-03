@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package in.kkamalyesh.apps.stk.androidvirtualkeyboard;
+package in.kkamalyesh.apps.stk.virtualkeyboard;
 
 import android.app.Dialog;
 import android.inputmethodservice.InputMethodService;
@@ -110,6 +110,7 @@ public class SoftKeyboard extends InputMethodService
             mLastDisplayWidth = displayWidth;
         }
         mQwertyKeyboard = new KKeyboardEn(this, R.xml.qwerty);
+//        mQwertyKeyboard = new KKeyboardEn(this, R.xml.stk_qwerty);
         mSymbolsKeyboard = new KKeyboardEn(this, R.xml.symbols);
         mSymbolsShiftedKeyboard = new KKeyboardEn(this, R.xml.symbols_shift);
     }
@@ -163,8 +164,9 @@ public class SoftKeyboard extends InputMethodService
      */
     @Override public View onCreateCandidatesView() {
         try {
-            mCandidateView = new CandidateView(this, night);
-            mCandidateView.setService(this);
+//            TODO: uncomment following lines to display candiadate view
+//            mCandidateView = new CandidateView(this, night);
+//            mCandidateView.setService(this);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -861,36 +863,38 @@ public class SoftKeyboard extends InputMethodService
     private void updateSmartkeySuggestions()  {
         try {
             //TODO: remove exceptions
-            String suggestions;
-            if (kComposing.length() < 1) {
-                suggestions = qwerty;
-            } else {
-                kComposing = new StringBuilder(kComposing.toString().toLowerCase());
-                suggestions = getSuggestions();
-            }
-            boolean suggestKeys = mQwertyKeyboard.isKeySuggestionModeKeyStateOn(getResources());
+            if(mInputView != null) {
+                String suggestions;
+                if (kComposing.length() < 1) {
+                    suggestions = qwerty;
+                } else {
+                    kComposing = new StringBuilder(kComposing.toString().toLowerCase());
+                    suggestions = getSuggestions();
+                }
+                boolean suggestKeys = mQwertyKeyboard.isKeySuggestionModeKeyStateOn(getResources());
 
-            ArrayList<KKeyboardEn.KKeyEn> sKeyList = mCurKeyboard.getKKeys();
-            KKeyboardEn.KKeyEn kKeyEn;
-            int sklSize = sKeyList.size();
-            for (int i = 0; i < sklSize; ++i) {
-                kKeyEn = sKeyList.get(i);
-                char c = (char) kKeyEn.getCode();
-                //char cS = smartKey.getLabel().charAt(0);
-                if (kKeyEn.getCode() != -101 && KKeyboardEn.isAlphabet((c))) {
-                    kKeyEn.undo();
-                    if (kKeyEn.getLabel() != null) {
-                        if (suggestKeys) {
-                            if (suggestions.contains("" + c)) {
+                ArrayList<KKeyboardEn.KKeyEn> sKeyList = mCurKeyboard.getKKeys();
+                KKeyboardEn.KKeyEn kKeyEn;
+                int sklSize = sKeyList.size();
+                for (int i = 0; i < sklSize; ++i) {
+                    kKeyEn = sKeyList.get(i);
+                    char c = (char) kKeyEn.getCode();
+                    //char cS = smartKey.getLabel().charAt(0);
+                    if (kKeyEn.getCode() != -101 && KKeyboardEn.isAlphabet((c))) {
+                        kKeyEn.undo();
+                        if (kKeyEn.getLabel() != null) {
+                            if (suggestKeys) {
+                                if (suggestions.contains("" + c)) {
 
-                            } else {
-                                kKeyEn.hide();
+                                } else {
+                                    kKeyEn.hide();
+                                }
                             }
                         }
                     }
                 }
+                mInputView.invalidateAllKeys();
             }
-            mInputView.invalidateAllKeys();
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -1,4 +1,4 @@
-package in.kkamalyesh.apps.stk.androidvirtualkeyboard;
+package in.kkamalyesh.apps.stk.virtualkeyboard;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
+//import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -21,7 +22,7 @@ import java.util.Locale;
 
 public class MainActivity extends Activity {
 
-    TextView startTV;
+    TextView startTV, startTvVersion;
     private View mControlsView;
     private boolean mVisible;
     private static boolean isReady=false;
@@ -62,6 +63,8 @@ public class MainActivity extends Activity {
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
         startTV = (TextView) findViewById(R.id.start_tv);
+        startTvVersion = (TextView) findViewById(R.id.start_tv_version);
+        startTvVersion.setText(BuildConfig.VERSION_NAME);
         tvStartMsg=(TextView)findViewById(R.id.start_message);
         btnStart=(Button)findViewById(R.id.select_kalafalaka_btn);
         btnStart.setOnClickListener(new View.OnClickListener() {

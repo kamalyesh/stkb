@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package in.kkamalyesh.apps.stk.androidvirtualkeyboard;
+package in.kkamalyesh.apps.stk.virtualkeyboard;
 
 import android.content.Context;
 import android.inputmethodservice.Keyboard;

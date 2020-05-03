@@ -1,4 +1,4 @@
-package in.kkamalyesh.apps.stk.androidvirtualkeyboard;
+package in.kkamalyesh.apps.stk.virtualkeyboard;
 
 import android.app.ActivityManager;
 
